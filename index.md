@@ -10,8 +10,6 @@ Industrial and Systems Engineering
 <br>
 Finance Double Major
 <br>
-Data Science Minor
-<br>
 <div style="display: flex; align-items: center; margin-bottom: 15px;">
   <a href="https://ibe.lehigh.edu/welcome-lehighs-ibe-honors-program">
     <img src="/images/IBE logo.png" alt="IBE Logo" style="width: 100px; margin-right: 15px;">
