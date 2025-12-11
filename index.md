@@ -28,7 +28,7 @@ I am passionate about the Financial Services Sector. Constantly looking to apply
 <!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
 _**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products](ISE321)**_
 
-Autocallable structured notes represent a dominant segment of the financial landscape, representing an estimated market size of $185.3 billion in 2024. Due to the iliquidity of the secondary market, investors often rely on issuer provided Mark-to-Market valuations. Standard Montecarlo pricing engines often struggle with the specific discontinuities of these products, leading to high variance or "noise" in daily valuation snapshots. The objective of this project is to outline a variance-reduced forecasting methodology for estimating the expected payoff of such products and provide stable and consistent valations. 
+A quantitative analysis of Structured Note performance beyond standard risk-neutral assumptions. The project contrasts pricing frameworks against historical data to assess how structural constraints interact with actual market trajectories.
 <p align = "center">
   <img src="images/ACN_eg.png" alt="img"/>
 </p>
