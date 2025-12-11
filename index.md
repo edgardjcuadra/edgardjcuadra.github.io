@@ -16,17 +16,6 @@ Finance Double Major
       <strong>Read About Lehigh's Integrated Business and Engineering (IBE) Honors Program</strong>
   </span>
 </a>
-<!-- <a href="https://ibe.lehigh.edu/welcome-lehighs-ibe-honors-program"
-   style="display: flex; align-items: center; text-decoration: none; background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 15px; border-radius: 12px; margin-bottom: 20px; transition: all 0.3s ease; color: inherit;"
-   onmouseover="this.style.backgroundColor='#e2e6ea'; this.style.borderColor='#dae0e5'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.05)';"
-   onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderColor='#e9ecef'; this.style.boxShadow='none';">
-  
-  <img src="/images/IBE logo.png" alt="IBE Logo" style="width: 100px; margin-right: 20px; flex-shrink: 0;">
-  
-  <span style="font-size: 1.1em;">
-      <strong>Read About Lehigh's Integrated Business and Engineering (IBE) Honors Program</strong>
-  </span>
-</a> -->
 
 ---
 
