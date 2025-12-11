@@ -53,7 +53,7 @@ This project explores whether CHRONOBERT, a Transformer-based model trained on c
 
 ---
 
--**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products](ISE321)**
+_**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products](ISE321.md)**
 
 Autocallable structured notes represent a dominant segment of the financial landscape, representing an estimated market size of $185.3 billion in 2024. Due to the iliquidity of the secondary market, investors often rely on issuer provided Mark-to-Market valuations. Standard Montecarlo pricing engines often struggle with the specific discontinuities of these products, leading to high variance or "noise" in daily valuation snapshots. The objective of this project is to outline a variance-reduced forecasting methodology for estimating the expected payoff of such products and provide stable and consistent valations. 
 <p align = "center">
