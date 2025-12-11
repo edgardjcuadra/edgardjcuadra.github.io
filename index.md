@@ -30,7 +30,7 @@ I am passionate about the Financial Services Sector. Constantly looking to apply
 ## Project Portfolio
 
 <!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
-_**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products](ISE321.md)**_
+_**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products]**_
 
 Autocallable structured notes represent a dominant segment of the financial landscape, representing an estimated market size of $185.3 billion in 2024. Due to the iliquidity of the secondary market, investors often rely on issuer provided Mark-to-Market valuations. Standard Montecarlo pricing engines often struggle with the specific discontinuities of these products, leading to high variance or "noise" in daily valuation snapshots. The objective of this project is to outline a variance-reduced forecasting methodology for estimating the expected payoff of such products and provide stable and consistent valations. 
 <p align = "center">
@@ -39,7 +39,7 @@ Autocallable structured notes represent a dominant segment of the financial land
 
 ---
 
-_**[Financial Engineering - Natural Language Processing 10-Ks to Identify Risk]**_
+_**[Financial Engineering - Natural Language Processing 10-Ks to Identify Risk](report.md)**_
 
 <!-- You can show off your midterm analysis by moving the report components and output into this file. Or... -->
 Using data dictionaries and word sentiment ratings along with financial topic word compilations, the 10-k documents for the S&P 500 firms were scraped and compared to returns around the day of the 10-k filing date to identify correlation metrics between document sentiment variables and stock returns.
