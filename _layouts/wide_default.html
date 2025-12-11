@@ -10,13 +10,53 @@
     <link rel="stylesheet" href="{{ "/assets/css/wide_style.css?v=" | append: site.github.build_revision | relative_url }}">
     
     <style>
+      /* Sidebar / Header Styling */
+      header {
+        background-color: #707C8F;  /* Your chosen Blue-Grey */
+        border-radius: 25px;        /* 1. Round edges for the config area */
+        padding: 30px;              /* 2. Add breathing room inside the box */
+        color: #ffffff;             /* 3. High Contrast: White text */
+        text-align: center;         /* Optional: Centers the content */
+      }
+
+      /* Force all text inside the header to be white */
+      header h1, header h1 a, header h4, header p {
+        color: #ffffff !important;
+        text-decoration: none;
+      }
+
+      /* Button Styling */
+      .contact-btn {
+        display: block;             /* Makes buttons stack vertically */
+        background-color: #ffffff;  /* White button background */
+        color: #707C8F !important;  /* Text color matches the sidebar background */
+        padding: 10px 15px;         /* Size of the button */
+        margin: 10px auto;          /* Space between buttons */
+        border-radius: 8px;         /* Round edges for the buttons themselves */
+        font-weight: bold;
+        text-decoration: none;
+        width: 80%;                 /* Button width relative to sidebar */
+        transition: opacity 0.3s;
+      }
+
+      .contact-btn:hover {
+        opacity: 0.9;               /* Slight effect when hovering */
+        text-decoration: none;
+      }
+
+      /* Main Content Styling */
+      section {
+        background-color: #ffffff;
+      }
+    </style>
+    <!-- <style>
       header {
         background-color: #707C8F; /* Try a color that matches your logo or preference */
       }
       section {
         background-color: #ffffff;
       }
-    </style>
+    </style> -->
 
     <script>
       MathJax = {
