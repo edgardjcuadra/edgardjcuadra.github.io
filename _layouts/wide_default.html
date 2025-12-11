@@ -10,53 +10,80 @@
     <link rel="stylesheet" href="{{ "/assets/css/wide_style.css?v=" | append: site.github.build_revision | relative_url }}">
     
     <style>
-      /* Sidebar / Header Styling */
-      header {
-        background-color: #707C8F;  /* Your chosen Blue-Grey */
-        border-radius: 25px;        /* 1. Round edges for the config area */
-        padding: 30px;              /* 2. Add breathing room inside the box */
-        color: #ffffff;             /* 3. High Contrast: White text */
-        text-align: center;         /* Optional: Centers the content */
+      /* 1. LAYOUT CONTAINER (Prevents Overlap) */
+      .wrapper {
+        display: flex;              /* Activates side-by-side layout */
+        flex-direction: row;        /* Aligns items horizontally */
+        justify-content: center;    /* Centers the whole block */
+        gap: 50px;                  /* Adds physical space between Sidebar and Content */
+        max-width: 1200px;          /* Prevents the page from getting too wide */
+        margin: 0 auto;             /* Centers the wrapper on the screen */
+        padding: 20px;
       }
 
-      /* Force all text inside the header to be white */
+      /* 2. SIDEBAR / HEADER STYLING */
+      header {
+        background-color: #707C8F;  /* Your Blue-Grey */
+        border-radius: 25px;        /* Round edges */
+        padding: 30px;              /* Internal spacing */
+        color: #ffffff;             /* White text */
+        text-align: center;
+        
+        /* Layout Fixes */
+        width: 300px;               /* Fixed width so it doesn't expand/shrink */
+        flex-shrink: 0;             /* Prevents sidebar from getting squished */
+        height: fit-content;        /* Only takes as much height as needed */
+        position: relative !important; /* Forces it to respect the layout flow */
+      }
+
+      /* Force header text to be white */
       header h1, header h1 a, header h4, header p {
         color: #ffffff !important;
         text-decoration: none;
       }
 
-      /* Button Styling */
+      /* 3. BUTTON STYLING */
       .contact-btn {
-        display: block;             /* Makes buttons stack vertically */
-        background-color: #ffffff;  /* White button background */
-        color: #707C8F !important;  /* Text color matches the sidebar background */
-        padding: 10px 15px;         /* Size of the button */
-        margin: 10px auto;          /* Space between buttons */
-        border-radius: 8px;         /* Round edges for the buttons themselves */
+        display: block;
+        background-color: #ffffff;
+        color: #707C8F !important;
+        padding: 10px 15px;
+        margin: 10px auto;
+        border-radius: 8px;
         font-weight: bold;
         text-decoration: none;
-        width: 80%;                 /* Button width relative to sidebar */
+        width: 80%;
         transition: opacity 0.3s;
       }
 
       .contact-btn:hover {
-        opacity: 0.9;               /* Slight effect when hovering */
-        text-decoration: none;
+        opacity: 0.9;
       }
 
-      /* Main Content Styling */
+      /* 4. MAIN CONTENT STYLING */
       section {
         background-color: #ffffff;
+        flex-grow: 1;               /* Allows text area to fill remaining space */
+        width: auto !important;     /* Overrides any theme defaults causing issues */
+        max-width: 800px;           /* meaningful width for readability */
+      }
+
+      /* 5. MOBILE RESPONSIVENESS (Phone View) */
+      @media (max-width: 768px) {
+        .wrapper {
+          flex-direction: column;   /* Stack them vertically on phones */
+          gap: 20px;
+        }
+        header {
+          width: 100%;              /* Sidebar takes full width on phone */
+          box-sizing: border-box;   /* Ensures padding doesn't break width */
+        }
+        section {
+          width: 100% !important;
+        }
       }
     </style>
-    <!-- <style>
-      header {
-        background-color: #707C8F; /* Try a color that matches your logo or preference */
-      }
-      section {
-        background-color: #ffffff;
-      }
-    </style> -->
+    
 
     <script>
       MathJax = {
