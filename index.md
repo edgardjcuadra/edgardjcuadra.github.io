@@ -26,7 +26,7 @@ I am passionate about the Financial Services Sector. Constantly looking to apply
 ## Project Portfolio
 
 <!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
-_**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products](ISE321)**_
+_**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products]**_
 
 A quantitative analysis of Structured Note performance beyond standard risk-neutral assumptions. The project contrasts pricing frameworks against historical data to assess how structural constraints interact with actual market trajectories.
 <p align = "center">
