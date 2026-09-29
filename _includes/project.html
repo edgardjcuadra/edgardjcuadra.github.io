@@ -1,0 +1,39 @@
+{%- comment -%} One project entry. Usage: {% include project.html p=project %} {%- endcomment -%}
+{%- assign p = include.p -%}
+{%- if p.external -%}{%- assign rel = ' target="_blank" rel="noopener"' -%}{%- else -%}{%- assign rel = '' -%}{%- endif -%}
+<article class="project reveal{% if p.featured %} project--featured{% endif %}">
+  {%- capture thumb -%}
+    {%- if p.video -%}
+    <video muted loop playsinline preload="metadata" poster="{{ p.poster | relative_url }}" aria-label="{{ p.alt | default: p.title | escape }}" width="1920" height="1080">
+      <source src="{{ p.video | append: '.webm' | relative_url }}" type="video/webm">
+      <source src="{{ p.video | append: '.mp4' | relative_url }}" type="video/mp4">
+    </video>
+    {%- else -%}
+    <img src="{{ p.image | relative_url }}" alt="{{ p.alt | default: p.title }}" loading="lazy" width="640" height="400">
+    {%- endif -%}
+  {%- endcapture -%}
+  {%- if p.url -%}
+  <a class="project-thumb{% if p.video %} project-thumb--video{% endif %}" href="{{ p.url | relative_url }}"{{ rel }} tabindex="-1">{{ thumb }}</a>
+  {%- else -%}
+  <div class="project-thumb{% if p.video %} project-thumb--video{% endif %}">{{ thumb }}</div>
+  {%- endif %}
+  <div class="project-body">
+    <p class="eyebrow">{{ p.category }}</p>
+    <h3>{% if p.url %}<a href="{{ p.url | relative_url }}"{{ rel }}>{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    {%- if p.motto %}
+    <p class="project-motto">{{ p.motto }}</p>
+    {%- endif %}
+    <p class="project-desc">{{ p.description }}</p>
+    <ul class="tags">
+      {% for t in p.tags %}<li>{{ t }}</li>{% endfor %}
+    </ul>
+    {% if p.links or p.note %}
+    <p class="project-links">
+      {% for l in p.links %}
+        <a href="{{ l.url | relative_url }}"{% if l.external %} target="_blank" rel="noopener"{% endif %}>{{ l.label }} <span class="arrow" aria-hidden="true">{% if l.external %}&#8599;{% else %}&rarr;{% endif %}</span></a>
+      {% endfor %}
+      {% if p.note %}<span class="project-note">{{ p.note }}</span>{% endif %}
+    </p>
+    {% endif %}
+  </div>
+</article>

@@ -1,0 +1,14 @@
+{%- comment -%} Sticky top bar. Pass `article=true` on article pages for the back link. {%- endcomment -%}
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="{{ '/' | relative_url }}">Edgard J. Cuadra</a>
+    <nav aria-label="Primary">
+      {% if include.article %}
+        <a href="{{ '/#projects' | relative_url }}">&larr; All projects</a>
+      {% else %}
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+      {% endif %}
+    </nav>
+  </div>
+</header>

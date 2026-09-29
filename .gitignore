@@ -1,0 +1,6 @@
+_site/
+.jekyll-cache/
+.sass-cache/
+
+# Supermax animation source is proprietary: kept locally (~/code/supermax-spotlight-source), never published
+_animation/

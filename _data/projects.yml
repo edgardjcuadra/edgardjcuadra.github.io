@@ -1,0 +1,44 @@
+# Add a project by appending an entry here. Optional keys: external, links, video/poster/featured/motto/note (see Supermax).
+# `url` is the primary link (title + thumbnail); `external: true` opens it in a new tab.
+# Internal pages use the .html extension so links work on GitHub Pages and any static server.
+- title: "Supermax Investment Engine"
+  category: "Financial Engineering"
+  featured: true
+  motto: "Read like an analyst. Allocate like a quant."
+  video: /assets/video/supermax
+  poster: /assets/video/supermax-poster.jpg
+  alt: "Abstract brand animation for the Supermax Investment Engine"
+  description: "A proprietary, systematic investment engine built for risk-adjusted portfolio optimization — where qualitative insight becomes quantitative conviction, held to a high bar before capital moves."
+  tags: [Quantitative Research, Systematic Investing, Portfolio Optimization]
+  note: "Proprietary · source private"
+- title: "Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products"
+  category: "Financial Engineering"
+  image: /images/ACN_eg.png
+  alt: "Autocallable note underlier path against the barrier"
+  description: "A quantitative analysis of Structured Note performance beyond standard risk-neutral assumptions. The project contrasts pricing frameworks against historical data to assess how structural constraints interact with actual market trajectories."
+  tags: [Monte Carlo, Structured Products, P-Measure, Python]
+  note: "Private repository"
+
+- title: "Natural Language Processing 10-Ks to Identify Risk"
+  category: "Financial Engineering"
+  url: /report.html
+  image: /images/output6.png
+  alt: "Correlation of 10-K sentiment variables with post-filing returns"
+  description: "Using data dictionaries and word sentiment ratings along with financial topic word compilations, the 10-k documents for the S&P 500 firms were scraped and compared to returns around the day of the 10-k filing date to identify correlation metrics between document sentiment variables and stock returns."
+  tags: [NLP, Sentiment Analysis, Event Study, S&P 500]
+  links:
+    - label: "Read write-up"
+      url: /report.html
+
+- title: "Bert and ChronoBert Time Series Analysis using Pairs Trading"
+  category: "Financial Engineering"
+  url: "https://chronopairs.streamlit.app/"
+  external: true
+  image: /images/image.png
+  alt: "ChronoBERT pairs trading results"
+  description: "This project explores whether CHRONOBERT, a Transformer-based model trained on chronologically ordered data, can improve financial time series forecasting, particularly in the context of pairs trading."
+  tags: [Transformers, NLP, Time Series, Pairs Trading]
+  links:
+    - label: "Live demo"
+      url: "https://chronopairs.streamlit.app/"
+      external: true
