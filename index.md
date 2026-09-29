@@ -1,74 +1,34 @@
 ---
-layout: wide_default
+layout: default
 ---
-## About Me
-**Lehigh University Class of 2025**
-<br>
-Integrated Business and Engineering Honors Program
-<br>
-Industrial and Systems Engineering
-<br>
-Finance Double Major
-<br>
-<a href="https://ibe.lehigh.edu/welcome-lehighs-ibe-honors-program" style="display: flex; align-items: center; text-decoration: none; background-color: #f8f9fa; border: 1px solid #e9ecef; padding: 15px; border-radius: 12px; margin-bottom: 20px; transition: all 0.3s ease; color: #333;" onmouseover="this.style.backgroundColor='#e2e6ea'; this.style.borderColor='#dae0e5'; this.style.boxShadow='0 4px 8px rgba(0,0,0,0.05)';" onmouseout="this.style.backgroundColor='#f8f9fa'; this.style.borderColor='#e9ecef'; this.style.boxShadow='none';">
-  <img src="/images/IBE logo.png" alt="IBE Logo" style="width: 100px; margin-right: 20px; flex-shrink: 0;">
-  <span style="font-size: 1.1em; color: inherit;">
-      <strong>Read About Lehigh's Integrated Business and Engineering (IBE) Honors Program</strong>
-  </span>
-</a>
+<div class="page">
 
----
+  <section class="intro reveal">
+    <img class="headshot" src="{{ '/images/headshot.jpg' | relative_url }}" alt="Portrait of Edgard J. Cuadra" width="80" height="80">
+    <div>
+      <h1>Edgard J. Cuadra</h1>
+      <p class="tagline">Financial engineering, quantitative modeling, and machine learning for markets.</p>
+      {% include social.html %}
+    </div>
+  </section>
 
-I am passionate about the Financial Services Sector. Constantly looking to apply technical mathemtatics through data science methods in multidisciplinary projects throughout my academic and personal endeavors. Ultimately a curious thinker and problem solver.
+  <section id="projects" class="section section-wide">
+    <h2 class="label">Selected Projects</h2>
+    <div class="projects">
+      {% for project in site.data.projects %}
+        {% include project.html p=project %}
+      {% endfor %}
+    </div>
+  </section>
 
----
+  <section id="about" class="section reveal">
+    <h2 class="label">About</h2>
+    <p>I am passionate about the Financial Services Sector. Constantly looking to apply technical mathemtatics through data science methods in multidisciplinary projects throughout my academic and personal endeavors. Ultimately a curious thinker and problem solver.</p>
+    <p class="education">Lehigh University<br>
+      Integrated Business and Engineering Honors Program<br>
+      Industrial and Systems Engineering<br>
+      Finance Double Major</p>
+    <p><a href="https://ibe.lehigh.edu/welcome-lehighs-ibe-honors-program" target="_blank" rel="noopener">Read About Lehigh's Integrated Business and Engineering (IBE) Honors Program &#8599;</a></p>
+  </section>
 
-## Project Portfolio
-
-<!-- You can link to other websites, PDFs in this repo, and other pages in this repo -->
-_**[Financial Engineering - Autocallable Methodology for P-Measure Forecasting of Autocallable Structured Products]**_
-
-A quantitative analysis of Structured Note performance beyond standard risk-neutral assumptions. The project contrasts pricing frameworks against historical data to assess how structural constraints interact with actual market trajectories.
-<p align = "center">
-  <img src="images/ACN_eg.png" alt="img"/>
-</p>
-
----
-
-_**[Financial Engineering - Natural Language Processing 10-Ks to Identify Risk](report.md)**_
-
-<!-- You can show off your midterm analysis by moving the report components and output into this file. Or... -->
-Using data dictionaries and word sentiment ratings along with financial topic word compilations, the 10-k documents for the S&P 500 firms were scraped and compared to returns around the day of the 10-k filing date to identify correlation metrics between document sentiment variables and stock returns.
-<p align = "center">
-    <img src="images/output6.png" alt="img" style="width: 500px"/>
-</p>
-
----
-
-_**[Financial Engineering - Bert and ChronoBert Time Series Analysis using Pairs Trading](https://chronopairs.streamlit.app/){:target="_blank"}**_
-
-This project explores whether CHRONOBERT, a Transformer-based model trained on chronologically ordered data, can improve financial time series forecasting, particularly in the context of pairs trading.
-<p align = "center">
-    <img src="images/image.png" alt="img" style="width: 500px"/>
-</p>
-<!-- <img src="images/dummy_thumbnail.jpg?raw=true"/> -->
-
-
-
-<!-- --- -->
-
-<!-- _**[Data Science - Formula 1 Race Predictions](main)**_ -->
-
-<!-- Using historical Formula 1 data, I created a Machine Learning model using Random Forest to predict outcomes of Formula 1 races. -->
-
-<!-- <img src="images/dummy_thumbnail.jpg?raw=true"/> -->
-
-<!-- ---
-_**[Financial Optimization - ](main)**_
-
-Insert Project description here... -->
-
-<!-- <img src="images/dummy_thumbnail.jpg?raw=true"/> -->
-
----
-
+</div>

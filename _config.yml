@@ -1,10 +1,29 @@
-title: Edgard J Cuadra 
-logo: "/images/Headshot2.2.jpg?raw=true" 
-description: >
-  <h4> Contact Information </h4>
-  <br>
-  <a href="https://www.linkedin.com/in/edgardjcuadra/" class="contact-btn">LinkedIn</a> 
-  <br>
-  <p> edgardcuadra8@gmail.com </p>
-    
-theme: jekyll-theme-minimal
+title: "Edgard J. Cuadra"
+description: "Projects in financial engineering, quantitative modeling, and machine learning."
+url: "https://edgardjcuadra.github.io"
+lang: en-US
+author: "Edgard J. Cuadra"
+image: /images/headshot.jpg
+
+plugins:
+  - jekyll-seo-tag
+
+# Rendered in the header, intro and footer (see _includes/social.html)
+social:
+  linkedin: "https://www.linkedin.com/in/edgardjcuadra/"
+  github: "https://github.com/edgardjcuadra"
+  email: "edgardcuadra8@gmail.com"
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - ISE321.md   # Autocallable write-up is private; kept out of the published site
+
+# jekyll-seo-tag reads og:image from page front matter, so default it for every page
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /images/headshot.jpg
