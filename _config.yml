@@ -5,6 +5,9 @@ lang: en-US
 author: "Edgard J. Cuadra"
 image: /images/headshot.jpg
 
+# Google Analytics 4 measurement ID (looks like G-XXXXXXXXXX); leave empty to disable
+google_analytics: "G-189573YSYN"
+
 plugins:
   - jekyll-seo-tag
 
